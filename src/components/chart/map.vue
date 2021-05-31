@@ -1,6 +1,10 @@
 <template>
-  <div class="hello" v-loading="maploading" element-loading-text="地图绘制中" 
-  style="height: 100vh;width: 100%">
+  <div
+    class="hello"
+    v-loading="maploading"
+    element-loading-text="地图绘制中"
+    style="height: 100vh;width: 100%"
+  >
     <div id="map"></div>
     <el-select v-model="value" placeholder="请选择">
       <el-option
@@ -81,16 +85,12 @@ export default {
                           <p>有线电视</p>
                           <p>代理商数据</p>
                       </li>
-                  `;
-            str =
-              str +
-              `
-                <li style='height: 20px; list-style: none; color: #198aea;font-size: 12px;display: flex;justify-content: space-between;align-items: center;margin: 5px 0'>
-                    <p>${mapmouseoverCityName}</p>
-                    <p>22(家)</p>
-                </li>
+                    <li style='height: 20px; list-style: none; color: #198aea;font-size: 12px;display: flex;justify-content: space-between;align-items: center;margin: 5px 0'>
+                        <p>${mapmouseoverCityName}</p>
+                        <p>22(家)</p>
+                    </li>
+                  </ul>
               `;
-            str = str + "</ul>";
             return str;
           },
         },
