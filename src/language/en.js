@@ -27,4 +27,5 @@ module.exports = {
     "endwarrant": "end warrant",
     "endOrder": 'Package order',
     "endRegional": "end regional",
+    "endMap": "Map management",
 }

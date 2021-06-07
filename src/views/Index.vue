@@ -124,7 +124,7 @@ export default defineComponent({
           {
             title: "ProgramSubcontract",
             to: "/Authorization",
-            icon: "el-icon-user",
+            icon: "el-icon-set-up",
           },
           {
             title: "endwarrant",
@@ -134,12 +134,17 @@ export default defineComponent({
           {
             title: "endOrder",
             to: "/ProgramPackage",
-            icon: "el-icon-coordinate",
+            icon: "el-icon-folder-checked",
           },
           {
             title: "endRegional",
             to: "/TerminalArea",
-            icon: "el-icon-coordinate",
+            icon: "el-icon-c-scale-to-original",
+          },
+          {
+            title: "endMap",
+            to: "/Mapmanagement",
+            icon: "el-icon-map-location",
           },
         ],
       },

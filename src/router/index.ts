@@ -24,6 +24,8 @@ import PackageOrder from '@/views/components/terminal/PackageOrder.vue'
 import ProgramPackage from '@/views/components/terminal/ProgramPackage.vue'
 //终端区域管理
 import TerminalArea from '@/views/components/terminal/TerminalArea.vue'
+//地图管理管理
+import Mapmanagement from '@/components/chart/echarts/map.vue'
 
 
 
@@ -89,6 +91,11 @@ const routes: Array<RouteRecordRaw> = [
             path: '/TerminalArea',
             name: 'TerminalArea',
             component: TerminalArea,
+          },
+          {
+            path: '/Mapmanagement',
+            name: 'Mapmanagement',
+            component: Mapmanagement,
           },
         ]
       }
