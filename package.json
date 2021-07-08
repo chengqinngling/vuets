@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "echarts": "^5.1.1",
+    "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.42",
     "js-cookie": "^2.2.1",
     "nprogress": "^0.2.0",
