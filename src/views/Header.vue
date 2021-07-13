@@ -3,7 +3,7 @@
     <el-row type="flex" class="row-bg" justify="space-between">
       <el-col :span="6" class="flex_align_b">
         <i
-          :class="isCollapse==true?'el-icon-s-fold':'el-icon-s-unfold'"
+          :class="isCollapse==true?'el-icon-s-fold':'el-icon-back'"
           class="cursor"
           style="font-size: 30px;padding-right:20px;"
           @click="onHeaderColl"

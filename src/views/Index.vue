@@ -2,7 +2,7 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside :width="isCollapse==true?'60px':'180px'">
+      <el-aside :width="isCollapse == true ? '45px' : '180px'">
         <el-collapse-transition>
           <el-menu
             :uniqueOpened="true"
@@ -12,28 +12,29 @@
             text-color="#fff"
             active-text-color="#ffd04b"
             :default-openeds="nvOpenIndex"
+            :collapse="isCollapse"
           >
             <el-submenu
-              v-for="(item,Nvindex) in NavMenuData"
-              :key="Nvindex+'elsubmenu'"
-              :index="`${parseInt(Nvindex+1)}submenu`"
+              v-for="(item, Nvindex) in NavMenuData"
+              :key="Nvindex + 'elsubmenu'"
+              :index="`${parseInt(Nvindex + 1)}submenu`"
               class="flex_center"
             >
               <template #title>
                 <i :class="item.icon"></i>
-                <span>{{$t(item.NaName)}}</span>
+                <span>{{ $t(item.NaName) }}</span>
               </template>
               <el-menu-item-group
-                v-for="(Grouping,GroupingIndex) in item.GroupingTitle"
+                v-for="(Grouping, GroupingIndex) in item.GroupingTitle"
                 :key="Grouping.to"
               >
                 <el-menu-item
-                  :index="countIndex(Nvindex,GroupingIndex)"
+                  :index="countIndex(Nvindex, GroupingIndex)"
                   class="flex_center"
-                  @click="ToLink(Grouping.to,Nvindex,GroupingIndex)"
+                  @click="ToLink(Grouping.to, Nvindex, GroupingIndex)"
                 >
                   <i :class="Grouping.icon"></i>
-                  {{$t(Grouping.title)}}
+                  <span>{{ $t(Grouping.title) }}</span>
                 </el-menu-item>
               </el-menu-item-group>
             </el-submenu>
@@ -124,7 +125,7 @@ export default defineComponent({
           {
             title: "ProgramSubcontract",
             to: "/Authorization",
-            icon: "el-icon-set-up",
+            icon: "el-icon-user",
           },
           {
             title: "endwarrant",
@@ -134,17 +135,12 @@ export default defineComponent({
           {
             title: "endOrder",
             to: "/ProgramPackage",
-            icon: "el-icon-folder-checked",
+            icon: "el-icon-coordinate",
           },
           {
             title: "endRegional",
             to: "/TerminalArea",
-            icon: "el-icon-c-scale-to-original",
-          },
-          {
-            title: "endMap",
-            to: "/Mapmanagement",
-            icon: "el-icon-map-location",
+            icon: "el-icon-coordinate",
           },
         ],
       },
