@@ -46,6 +46,7 @@ export default {
   },
   methods: {
     //初始化动态引入地图
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     initJsonMap(city = "china") {
       if (city == "china") {
         this.jsonMap[this.value] = require(`@/public/json/${city}.json`);
